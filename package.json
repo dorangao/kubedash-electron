@@ -1,13 +1,19 @@
 {
   "name": "my-electron-next-app",
   "version": "0.1.0",
+  "main": "main/main.mjs",
+  "author": "Your Name",
+  "description": "Electron + Next.js example project",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" \"next dev\" \"electron .\"",
+    "build": "next build && electron-builder",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
+    "electron-serve": "^3.0.0",
+    "lucide-react": "^0.562.0",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3"
@@ -16,6 +22,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^9.2.1",
+    "electron": "^39.2.7",
+    "electron-builder": "^26.0.12",
     "typescript": "^5"
   }
 }

@@ -1,0 +1,17 @@
+appId: "com.yourname.kubedash"
+productName: "KubeDash"
+copyright: "Copyright © 2025 Your Name"
+directories:
+  output: dist
+
+mac:
+  target: ["dmg", "zip"]
+  # icon: "resources/icon.icns"
+
+win:
+  target: ["nsis", "portable"]
+  # icon: "resources/icon.ico"
+
+linux:
+  target: ["AppImage", "zip"]
+  # icon: "resources/icon.png"
