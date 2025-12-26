@@ -1,6 +1,6 @@
-appId: "com.yourname.kubedash"
+appId: "com.sketchplaywrite.kubedash"
 productName: "KubeDash"
-copyright: "Copyright © 2025 Your Name"
+copyright: "Copyright © 2025 Doran Gao"
 directories:
   output: dist
 

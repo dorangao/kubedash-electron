@@ -1,8 +1,8 @@
 {
-  "name": "my-electron-next-app",
+  "name": "kubedash-electron",
   "version": "0.1.0",
   "main": "main/main.mjs",
-  "author": "Your Name",
+  "author": "Doran Gao",
   "description": "Electron + Next.js example project",
   "private": true,
   "scripts": {
